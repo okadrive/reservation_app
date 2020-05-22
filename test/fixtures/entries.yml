@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  reserved_date: MyString
+  user_name: MyString
+  user_email: MyString
+  usage_time: 1
+  room_id: 1
+  people: 1
+
+two:
+  reserved_date: MyString
+  user_name: MyString
+  user_email: MyString
+  usage_time: 1
+  room_id: 1
+  people: 1
