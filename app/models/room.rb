@@ -1,4 +1,6 @@
 class Room < ApplicationRecord
+  # Entry モデルと1対多の関係
+  has_many :entries, dependent: :destroy
   before_validation :change_space
 
   validates :name, :place, :number, presence: true

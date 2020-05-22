@@ -1,4 +1,6 @@
 class Entry < ApplicationRecord
+  # Room モデルが親の関係
+  belongs_to :room
   # 基準日の前後 7 日間の予約データを取得するスコープ
   scope :least_entries,->(base_date) {
     where("reserved_date >= ? and reserved_date <= ?",
